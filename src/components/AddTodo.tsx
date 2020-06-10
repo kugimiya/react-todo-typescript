@@ -39,7 +39,7 @@ function AddTodoComponent({ onAdd }: AddTodoComponentProps) {
           onAdd(newLabel)
           changeLabel('')
         } }
-      >💦</button>
+      ><span role='img' aria-label='add splashes'>💦</span></button>
     </div>
   )
 }
