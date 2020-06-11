@@ -28,7 +28,7 @@ function FilterComponent({
       <select
         className='section__filter-selector'
         onChange={ (ev: React.FormEvent<HTMLSelectElement>) => {
-          onVisibilityChange(+ev.currentTarget.value as unknown as number); // WTF? How can I convert `value: string` to `VisibleFilter` safe?
+          onVisibilityChange(+ev.currentTarget.value as VisibilityFilter);
         } }
         value={ visibility }
       >
